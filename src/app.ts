@@ -1,9 +1,9 @@
-console.log("hello")
+
 let todo = document.getElementById("todoList")
 let taskInput = document.getElementById("taskInput")
 let addButton = document.getElementById("addButton")
 
-function createElement(task : string){HTMLElement{
+function createElement(task : string):HTMLElement{
     const li = document.createElement("li")
     li.textContent = task;
     li.onclick= () => toggleCompletion(li);
